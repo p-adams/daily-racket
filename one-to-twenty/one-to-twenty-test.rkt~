@@ -1,14 +1,13 @@
 #lang racket/base
-(require rackunit
-         rackunit/text-ui
-         "one-to-twenty.rkt")
+(require
+ rackunit
+ rackunit/text-ui
+ "one-to-twenty.rkt")
 
 (define one-to-twenty-tests
   (test-suite
    "Tests for problems 1 to 20"
 
-   (check-equal? (sum 1 1) 2)
-   
    (check-equal? (= 1 1) #t)
    ))
 
